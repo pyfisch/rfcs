@@ -187,6 +187,16 @@ to hire some kind of large paid support staff to work through them. A
 lightweight termination condition returns us to the status quo, after which we
 can revisit in another RFC better informed by our newfound knowledge.
 
+### Why would anyone volunteer to be a Responsible Party?
+
+Two volunteers expressed interest in the pre-eRFC thread on the internals forum
+(disclosure: one of them is the RFC author). I believe this is already
+sufficient to move forward with the RFC.
+
+If in the future it becomes impossible to find an interested qualified
+candidate, the experiment would be terminated which immediately returns us to
+the status quo.
+
 # Rationale and alternatives
 
 ### Alternative: provide a checklist of criteria
