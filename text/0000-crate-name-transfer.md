@@ -196,9 +196,13 @@ Two volunteers expressed interest in the pre-eRFC thread on the internals forum
 (disclosure: one of them is the RFC author). I believe this is already
 sufficient to move forward with the RFC.
 
-If in the future it becomes impossible to find an interested qualified
-candidate, the experiment would be terminated which immediately returns us to
-the status quo.
+If in the future it becomes impossible to find a willing qualified candidate,
+this would be sufficient reason for a team to terminate the experiment, which
+immediately returns us to the status quo. Note that a gap in coverage does not
+automatically terminate the experiment. Termination would be a team decision
+based on the negatives of having the process continue to exist without a person
+behind it, as well as the perceived likelihood of a qualified candidate turning
+up in time.
 
 # Rationale and alternatives
 
