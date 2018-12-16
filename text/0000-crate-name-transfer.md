@@ -169,7 +169,7 @@ It may be perceived as a decision *against* adopting a namespacing scheme or
 other mechanism of shrinking the occurrence of package name contention. Likewise
 not the intention of this eRFC. I would encourage anyone believing strongly in
 namespacing to pursue it in a different RFC. Namespacing touches on an
-overlapping set of concerns but is orthogonal to this RFC in that we my opt to
+overlapping set of concerns but is orthogonal to this RFC in that we may opt to
 do neither, one or the other, or both.
 
 By design, this eRFC proposes making the smallest and most conservative possible
@@ -247,9 +247,9 @@ Arguments in favor of designating more than one person:
 - Avoid conflict of interest when the Responsible Party theirself wants to
   request a crate.
 - Reduce perception that a request has been denied because of personal grievance
-  with the requestor, or other social factor.
+  with the requester, or other social factor.
 - Reduce perception that a request has been granted because of personal
-  acquaintance with the requestor, or other social factor.
+  acquaintance with the requester, or other social factor.
 - Achieve more continuous coverage when the person needs time off.
 - Reduce the possibility of simply overlooking some important factor.
 - Ease a high-pressure high-burnout role.
