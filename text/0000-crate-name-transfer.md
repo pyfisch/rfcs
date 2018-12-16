@@ -162,6 +162,16 @@ By taking this step, it may be perceived as a decision *against* ever addressing
 the name squatting situation more decisively. That is not the intention of this
 eRFC.
 
+It may be perceived as a decision *against* adopting a namespacing scheme or
+other mechanism of shrinking the occurrence of package name contention. Likewise
+not the intention of this eRFC. I would encourage anyone believing strongly in
+namespacing to pursue it in a different RFC. Namespacing touches on an
+overlapping set of concerns but is orthogonal to this RFC in that we my opt to
+do neither, one or the other, or both.
+
+By design, this eRFC proposes making the smallest and most conservative possible
+step from the status quo.
+
 ### The volume of requests may be overwhelming.
 
 If the volume of requests is overwhelming, that would be sufficient reason for
