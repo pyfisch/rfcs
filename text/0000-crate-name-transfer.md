@@ -57,6 +57,9 @@ terminate without further discussion.
 This termination condition is intended as a lightweight way to avert or contain
 unforeseen impact of adopting this experimental RFC.
 
+The experiment will continue indefinitely until terminated as described here or
+amended by another RFC.
+
 # Reference-level explanation
 
 The library team and/or moderation team will designate a Responsible Party.
