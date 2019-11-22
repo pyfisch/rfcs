@@ -5,8 +5,8 @@
 
 # Summary
 
-This experimental RFC proposes a process by which a designated Rust team member
-or members could reassign ownership of a crate name on crates.io. The aim is to
+This experimental RFC proposes a process by which a designated group of Rust team members
+could reassign ownership of a crate name on crates.io. The aim is to
 identify the absolute smallest, most conservative step we can feasibly make from
 the status quo of crate names that can only be transferred by a current owner.
 The proposal is intended to address *only the absolute most clear-cut
@@ -32,7 +32,7 @@ the same crate):
   that is all ready to be published,
 - Reasonable efforts to contact the author are unsuccessful.
 
-This eRFC introduces an opportunity for a Rust team member to be entrusted in
+This eRFC introduces an opportunity for a group of Rust team members to be entrusted in
 volunteering their time and their reputation to improve the experience of using
 crates.io by arbitrating similarly clear-cut cases.
 
@@ -60,25 +60,31 @@ unforeseen impact of adopting this experimental RFC.
 The experiment will continue indefinitely until terminated as described here or
 amended by another RFC.
 
+<!-- TODO: Add review meeting after 6 months. -->
+
 # Reference-level explanation
 
-The library team and/or moderation team will designate a Responsible Party.
-Crate transfers happen at the sole discretion of the Responsible Party.
+The library team and/or moderation team will appoint a group of 3 to 5 people
+as the "crates.io crate name transfer team".
+This team will be a sub team of the "crates.io team".
+<!-- TODO: rename team members should be considered crates.io team members.
+    Do they get voting rights, the right to raise concerns in RFCs? -->
+Crate transfers happen at the sole discretion of the "crates.io crate name transfer team".
 
-The Responsible Party need not be a member of the library team or moderation
-team. There may be more than one Responsible Party, in which case the
-Responsible Parties will need to agree among themselves on a consensus process
-for approving crate transfer requests. If the Responsible Parties cannot agree,
-they are deemed Not So Responsible After All and the experiment terminates.
+Transfer requests are approved if a majority of the team members approves the
+request and none object to it.
+<!-- TODO: This is the same decision making method as other teams follow
+  is there a more detailed description we can refer to. -->
+<!-- TODO: Are votes public? -->
 
-To reiterate: crate transfers happen at the sole discretion of the Responsible
-Party. There is no checklist of criteria that decide whether a request is
-granted. The Responsible Party is entrusted with upholding the intent of the
+To reiterate: crate transfers happen at the sole discretion of the team. 
+There is no checklist of criteria that decide whether a request is
+granted. The team is entrusted with upholding the intent of the
 eRFC in performing transfers in only the absolute most clear-cut cases according
 to their judgement.
 
 When a user requests ownership of a crate, the two possible responses by the
-Responsible Party are:
+team are:
 
 1. All right, I yanked the existing releases and set you as the owner! Please
    ensure that the next version you publish is a separate semver major version
@@ -89,7 +95,7 @@ Responsible Party are:
    crate name for now, but we can leave this request open if you want and
    revisit the decision in the future.
 
-The Responsible Party is encouraged to respond to requests in a timely manner,
+The team is encouraged to respond to requests in a timely manner,
 but realistically they will respond when they have time and mental energy
 available.
 
@@ -101,11 +107,11 @@ time, but a viable way to begin would be as follows.
 - Implement the appropriate [audit trail in crates.io][audit] to provide ground
   truth if a dispute should arise.
 
-- Hardcode the accounts of the Responsible Parties into the crates.io codebase
-  as unexposed owners of all crates. (There is only a small handful of people
-  who have full database access to crates.io, and it is prudent to continue to
-  limit the number of people and the number of reasons to go mucking around in
-  the database directly.)
+- Modify crates.io, so that it only allows the new owners of a crate to publish
+  versions of the new crate which are semver-incompatible to those of the old crate.
+
+- After a crate was transferred display a banner for 90 days on it's crates.io page
+  informing visitors of the change in ownership.
 
 - Set up a repository under https://github.com/rust-lang called
   "crate-transfers".
@@ -120,6 +126,8 @@ time, but a viable way to begin would be as follows.
   an issue or sending a pull request. A crate that is "up for grabs" trivially
   meets the "clear-cut situation" requirement if ownership of that name is ever
   requested.
+
+- Crate name transfers are executed by a crates.io operations person.
 
 - Decision to terminate the experiment may be delivered by filing an issue
   containing the safeword message above. A pre-prepared note will be added to
