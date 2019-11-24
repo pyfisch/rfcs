@@ -86,12 +86,12 @@ to their judgement.
 When a user requests ownership of a crate, the two possible responses by the
 team are:
 
-1. All right, I yanked the existing releases and set you as the owner! Please
+1. All right, we yanked the existing releases and set you as the owner! Please
    ensure that the next version you publish is a separate semver major version
    from any of the old yanked releases.
 
-2. Hi! Thanks for the request. I believe this case is less clear-cut than the
-   ones I am currently willing to grant. I would recommend picking a different
+2. Hi! Thanks for the request. We believe this case is less clear-cut than the
+   ones we are currently willing to grant. We would recommend picking a different
    crate name for now, but we can leave this request open if you want and
    revisit the decision in the future.
 
@@ -138,7 +138,7 @@ time, but a viable way to begin would be as follows.
 
 # Drawbacks
 
-### What if people get mad at the Responsible Party?
+### What if people get mad at the name transfer team?
 
 People are welcome to get mad at any Rust team member at any time, although this
 is not encouraged. The Responsible Party needs to be willing to stake their
@@ -204,7 +204,7 @@ Two volunteers expressed interest in the pre-eRFC thread on the internals forum
 (disclosure: one of them is the RFC author). I believe this is already
 sufficient to move forward with the RFC.
 
-If in the future it becomes impossible to find a willing qualified candidate,
+If in the future it becomes impossible to find willing qualified candidates,
 this would be sufficient reason for a team to terminate the experiment, which
 immediately returns us to the status quo. Note that a gap in coverage does not
 automatically terminate the experiment. Termination would be a team decision
@@ -248,39 +248,19 @@ proposal of this RFC, which is that crate transfers happen at the sole
 discretion of the Responsible Party. Let's debate the list only after deciding
 that there should be a list.
 
-### Alternative: require quorum greater than one
+### Alternative: Single person responsible party
 
-This eRFC allows for there to be multiple Responsible Parties as designated by
-the libs team and moderation team, but I believe that a single one is sufficient
-for attempting this experiment.
+An earlier version of this RFC proposed that one person is sufficient to 
+handle crates.io crate name transfers.
 
-Arguments in favor of designating more than one person:
+Arguments to proceed with one person and not a team:
 
-- Avoid conflict of interest when the Responsible Party theirself wants to
-  request a crate.
-- Reduce perception that a request has been denied because of personal grievance
-  with the requester, or other social factor.
-- Reduce perception that a request has been granted because of personal
-  acquaintance with the requester, or other social factor.
-- Achieve more continuous coverage when the person needs time off.
-- Reduce the possibility of simply overlooking some important factor.
-- Ease a high-pressure high-burnout role.
-
-I believe it is a totally reasonable instinct to want to distribute the
-responsibility across multiple people. A small team would constitute negligible
-overhead in most cases while proving valuable in borderline ones.
-
-However, I believe we should allow the experiment to proceed with just one
-Responsible Party. The experiment has been structured such that they are
-incentivized to be as cautious and conservative as possible. I believe that
-accountability to the Rust teams (any of which could terminate the experiment at
-any time) provides sufficient mitigation even with only one person responsible.
-
-The libs team and moderation team can designate additional people as they
-perceive it to be necessary.
-
-The Responsible Party may always seek the advice of Rust team members in
-borderline cases without there being an official second designee.
+- The responsible party is encouraged by the design of the experiment to
+  be as cautious and conservative as possible.
+- A new team adds overhead to the decision-making process.
+- There may not be enough volunteers to form a team.
+- The Responsible Party may always seek the advice of Rust team members in
+  borderline cases without there being an official second designee.
 
 # Prior art
 
