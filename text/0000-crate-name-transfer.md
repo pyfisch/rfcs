@@ -60,8 +60,6 @@ unforeseen impact of adopting this experimental RFC.
 The experiment will continue indefinitely until terminated as described here or
 amended by another RFC.
 
-<!-- TODO: Add review meeting after 6 months. -->
-
 # Reference-level explanation
 
 The library team and/or moderation team will appoint a group of 3 to 5 people
@@ -132,6 +130,11 @@ time, but a viable way to begin would be as follows.
 - Decision to terminate the experiment may be delivered by filing an issue
   containing the safeword message above. A pre-prepared note will be added to
   the readme and the repository will be [archived].
+
+- 6 months after the "crates.io crate name transfer team" has started
+  accepting requests they will have a review meeting with the "crates.io team"
+  to discuss how things can be altered and improved. (Unless the experiment is
+  terminated before.)
 
 [audit]: https://github.com/rust-lang/crates.io/issues/1548
 [archived]: https://help.github.com/articles/about-archiving-repositories/
